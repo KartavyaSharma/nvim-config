@@ -38,10 +38,10 @@ filetype plugin indent on   " indents based on filetype
 let mapleader = ","
 
 " Hacky terminal stuff
-map <Leader>t :vs \| te<CR>
-autocmd TermOpen * startinsert
-autocmd TermClose * execute 'bdelete! ' . expand('<abuf>')
-tnoremap kj <C-\><C-n>
+" map <Leader>t :vs \| te<CR>
+" autocmd TermOpen * startinsert
+" autocmd TermClose * execute 'bdelete! ' . expand('<abuf>')
+" tnoremap kj <C-\><C-n>
 
 " NvimTree shortcut toggle
 map <Leader>m :NvimTreeToggle .<CR>
@@ -70,10 +70,8 @@ map <Leader>g :lua _LAZYGIT_TOGGLE()<CR>
 map <Leader>v :ToggleTerm direction=vertical size=60<CR>
 
 " Telescope stuff
-nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+map <Leader>f :Telescope find_files<CR>
+map <Leader>l :Telescope live_grep<CR>
 
 " Lua plugin modules with custom configs
 call v:lua.require('plugins')
@@ -85,10 +83,10 @@ call v:lua.require('configs.lualine')
 call v:lua.require('configs.icons')
 call v:lua.require('configs.nvim-tree')
 call v:lua.require('configs.toggleterm')
+call v:lua.require('configs.telescope')
 
 " Plugin setups with default configs
-call v:lua.require('neoscroll').setup()
 call v:lua.require('nvim-autopairs').setup()
 call v:lua.require('todo-comments').setup()
 call v:lua.require('Comment').setup()
-call v:lua.require('neoscroll').setup()
+" call v:lua.require('neoscroll').setup()

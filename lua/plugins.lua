@@ -63,10 +63,10 @@ local function plugins(use)
     use { 'akinsho/bufferline.nvim', tag='v3.*' }                   -- bufferline when file edit
     use { 'ahmedkhalf/project.nvim' }                               -- superior project management
     use { 'lukas-reineke/indent-blankline.nvim' }                   -- vertical lines at each indentation level      
-    use { 'karb94/neoscroll.nvim' }                                 -- smooth scrolling
     use { 'famiu/bufdelete.nvim' }                                  -- easy buffer deletion
-    use { 'akinsho/toggleterm.nvim' }                              -- integrated nvim terminal
-    -- use { 'preservim/tagbar' }                                      -- tag bar with file structure
+    use { 'akinsho/toggleterm.nvim' }                               -- integrated nvim terminal
+    -- use { 'preservim/tagbar' }                                   -- tag bar with file structure
+    -- use { 'karb94/neoscroll.nvim' }                              -- smooth scrolling
 
     -- GIT
     use { 'lewis6991/gitsigns.nvim' }                               -- git change signs on the left
