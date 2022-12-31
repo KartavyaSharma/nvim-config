@@ -64,6 +64,11 @@ map <Leader>b :TagbarToggle<CR>
 " Open vs code in curr dir
 map <Leader>n :!code .<CR>
 
+" Toggle term presets
+map <Leader>q :lua _PYTHON_TOGGLE()<CR>
+map <Leader>g :lua _LAZYGIT_TOGGLE()<CR>
+map <Leader>v :ToggleTerm direction=vertical size=60<CR>
+
 " Telescope stuff
 nnoremap <leader>ff <cmd>lua require('telescope.builtin').find_files()<cr>
 nnoremap <leader>fg <cmd>lua require('telescope.builtin').live_grep()<cr>
@@ -79,6 +84,7 @@ call v:lua.require('configs.gitsigns')
 call v:lua.require('configs.lualine')
 call v:lua.require('configs.icons')
 call v:lua.require('configs.nvim-tree')
+call v:lua.require('configs.toggleterm')
 
 " Plugin setups with default configs
 call v:lua.require('neoscroll').setup()
