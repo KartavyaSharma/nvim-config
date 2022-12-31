@@ -59,13 +59,13 @@ nmap <silent> <c-l> :wincmd l<CR>
 map <Leader>c :noh<CR>
 
 " Tagbar mappings
-map <Leader>b :TagbarToggle<CR>
+" map <Leader>b :TagbarToggle<CR>
 
 " Open vs code in curr dir
 map <Leader>n :!code .<CR>
 
 " Toggle term presets
-map <Leader>q :lua _PYTHON_TOGGLE()<CR>
+map <Leader>s :lua _PYTHON_TOGGLE()<CR>
 map <Leader>g :lua _LAZYGIT_TOGGLE()<CR>
 map <Leader>v :ToggleTerm direction=vertical size=60<CR>
 
@@ -89,4 +89,3 @@ call v:lua.require('configs.telescope')
 call v:lua.require('nvim-autopairs').setup()
 call v:lua.require('todo-comments').setup()
 call v:lua.require('Comment').setup()
-" call v:lua.require('neoscroll').setup()
