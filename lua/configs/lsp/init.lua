@@ -1,11 +1,11 @@
 local status_ok, mason = pcall(require, 'mason')
 if not status_ok then
-   return 
+   return
 end
 
-status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
+local status_ok, mason_lspconfig = pcall(require, 'mason-lspconfig')
 if not status_ok then
-   return 
+   return
 end
 
 local status_cmp_ok, cmp_lsp = pcall(require, "cmp_nvim_lsp")
@@ -13,21 +13,11 @@ if not status_cmp_ok then
 	return
 end
 
-status_ok, lspconfig = pcall(require, 'lspconfig')
+local status_ok, lspconfig = pcall(require, 'lspconfig')
 if not status_ok then
-   return 
+   return
 end
 
-cmp_lsp.setup({ sources = { name = 'nvim-lsp' } })
-
-local capabilities = cmp_lsp.default_capabilities()
-
--- Automatic setup using mason-lspconfig
-mason_lspconfig.setup_handlers {
-    function (server_name)
-        require('lspconfig')[server_name].setup { capabilities = capabilities }
-    end
-}
 
 local mason_config = {
 
@@ -76,11 +66,11 @@ local mason_config = {
 mason.setup(mason_config)
 
 local masonlsp_config = {
-    ensure_installed = { 
-        'sumneko_lua', 
-        'bashls', 
-        'clangd', 
-        'cssls', 
+    ensure_installed = {
+        'sumneko_lua',
+        'bashls',
+        'clangd',
+        'cssls',
         'eslint',
         'grammarly',
         'jsonls',
@@ -91,3 +81,14 @@ local masonlsp_config = {
 }
 
 mason_lspconfig.setup(masonlsp_config)
+
+cmp_lsp.setup({ sources = { name = 'nvim-lsp' } })
+
+local capabilities = cmp_lsp.default_capabilities()
+
+-- Automatic setup using mason-lspconfig
+mason_lspconfig.setup_handlers {
+    function (server_name)
+        require('lspconfig')[server_name].setup { capabilities = capabilities }
+    end
+}
