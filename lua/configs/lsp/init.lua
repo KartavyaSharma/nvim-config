@@ -13,7 +13,21 @@ if not status_cmp_ok then
 	return
 end
 
+status_ok, lspconfig = pcall(require, 'lspconfig')
+if not status_ok then
+   return 
+end
 
+cmp_lsp.setup({ sources = { name = 'nvim-lsp' } })
+
+local capabilities = cmp_lsp.default_capabilities()
+
+-- Automatic setup using mason-lspconfig
+mason_lspconfig.setup_handlers {
+    function (server_name)
+        require('lspconfig')[server_name].setup { capabilities = capabilities }
+    end
+}
 
 local mason_config = {
 
