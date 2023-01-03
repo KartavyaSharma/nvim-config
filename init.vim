@@ -24,7 +24,7 @@ set undofile                " persistent undo
 set updatetime=300          " faster completion
 set norelativenumber        " relative numbered lines
 set signcolumn=yes          " always show the sign column
-set nowrap                  " display lines as one long line
+" set nowrap                  " display lines as one long line
 set linebreak               " companion to wrap, don't split words
 set scrolloff=8             " minimum number of lines above and below cursor
 set sidescrolloff=8         " minimum number of columns either side of cursor
@@ -84,6 +84,8 @@ call v:lua.require('configs.icons')
 call v:lua.require('configs.nvim-tree')
 call v:lua.require('configs.toggleterm')
 call v:lua.require('configs.telescope')
+call v:lua.require('configs.treesitter')
+call v:lua.require('configs.cmp')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()

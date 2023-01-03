@@ -77,7 +77,18 @@ local function plugins(use)
     use { 'junegunn/fzf' }                                          -- fuzzy finding
 
     -- TREESITTER
-    use { 'nvim-treesitter/nvim-treesitter' }
+    use { 'nvim-treesitter/nvim-treesitter' }                       -- better syntax highlighting
+
+    -- CMP
+    use { "hrsh7th/nvim-cmp" }                                      -- core completion plugin
+    use { 'hrsh7th/cmp-buffer' }                                    -- buffer completion support
+    use { 'hrsh7th/cmp-path' }                                      -- path completion support
+    use { 'hrsh7th/cmp-cmdline' }                                   -- vim cmd completion support
+    use { 'saadparwaiz1/cmp_luasnip' }                              -- snippet completion support
+
+    -- SNIPPETS
+    use { "L3MON4D3/LuaSnip", run = "make install_jsregexp" }       -- snippet engine with in-place transformations
+    use { "rafamadriz/friendly-snippets" }                          -- bunch of snippets
 
     if packer_bootstrap then
         print 'Restart Neovim required after installation!'
