@@ -84,11 +84,20 @@ local function plugins(use)
     use { 'hrsh7th/cmp-buffer' }                                    -- buffer completion support
     use { 'hrsh7th/cmp-path' }                                      -- path completion support
     use { 'hrsh7th/cmp-cmdline' }                                   -- vim cmd completion support
+    use { 'hrsh7th/cmp-nvim-lsp' }                                  -- lst completion integration with cmp
     use { 'saadparwaiz1/cmp_luasnip' }                              -- snippet completion support
 
     -- SNIPPETS
-    use { "L3MON4D3/LuaSnip", run = "make install_jsregexp" }       -- snippet engine with in-place transformations
+    use { "L3MON4D3/LuaSnip", run="make install_jsregexp" }         -- snippet engine with in-place transformations
     use { "rafamadriz/friendly-snippets" }                          -- bunch of snippets
+
+    -- LSP
+    use { 'williamboman/mason.nvim' }                               -- plugin manager for lsp/daps
+    use { 'williamboman/mason-lspconfig.nvim' }                     -- lsp config integration with mason
+    use { 'neovim/nvim-lspconfig' }                                 -- enables lsp
+
+    -- LINTING
+    use { 'jose-elias-alvarez/null-ls.nvim' }                       -- lsp based code diagnostics and formatting
 
     if packer_bootstrap then
         print 'Restart Neovim required after installation!'

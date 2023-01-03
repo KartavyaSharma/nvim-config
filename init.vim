@@ -24,7 +24,6 @@ set undofile                " persistent undo
 set updatetime=300          " faster completion
 set norelativenumber        " relative numbered lines
 set signcolumn=yes          " always show the sign column
-" set nowrap                  " display lines as one long line
 set linebreak               " companion to wrap, don't split words
 set scrolloff=8             " minimum number of lines above and below cursor
 set sidescrolloff=8         " minimum number of columns either side of cursor
@@ -33,6 +32,7 @@ set whichwrap="bs\<\>\[\]h1"" which horizontal keys are allowed to travel to the
 filetype plugin indent on   " indents based on filetype
 
 " Unholy
+" set nowrap                  " display lines as one long line
 
 
 let mapleader = ","
@@ -69,6 +69,9 @@ map <Leader>s :lua _PYTHON_TOGGLE()<CR>
 map <Leader>g :lua _LAZYGIT_TOGGLE()<CR>
 map <Leader>v :ToggleTerm direction=vertical size=60<CR>
 
+" Mason lsp
+map <Leader>sp :Mason<CR>
+
 " Telescope stuff
 map <Leader>f :Telescope find_files<CR>
 map <Leader>l :Telescope live_grep<CR>
@@ -86,6 +89,7 @@ call v:lua.require('configs.toggleterm')
 call v:lua.require('configs.telescope')
 call v:lua.require('configs.treesitter')
 call v:lua.require('configs.cmp')
+call v:lua.require('configs.lsp')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()
