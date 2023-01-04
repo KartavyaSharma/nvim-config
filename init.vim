@@ -19,7 +19,7 @@ set hlsearch                " highlight all matches from previous search pattern
 set noshowmode              " wont show things like --INSERT--
 set smartcase               " smart casing
 set smartindent             " indenting is smart again
-set timeoutlen=300          " time to wait for a mapped sequence to complete (ms)
+set timeoutlen=500          " time to wait for a mapped sequence to complete (ms)
 set undofile                " persistent undo
 set updatetime=300          " faster completion
 set norelativenumber        " relative numbered lines
@@ -44,37 +44,37 @@ let mapleader = ","
 " tnoremap kj <C-\><C-n>
 
 " NvimTree shortcut toggle
-map <Leader>m :NvimTreeToggle .<CR>
+" map <Leader>m :NvimTreeToggle .<CR>
 
 " Don't touch, nvim-tree is weird
 autocmd bufenter * if (winnr("$") == 1 && &filetype == "nvimtree") | q | endif
 
 " Use ctrl-[hjkl] to select the active split!
-nmap <silent> <c-k> :wincmd k<CR>
-nmap <silent> <c-j> :wincmd j<CR>
-nmap <silent> <c-h> :wincmd h<CR>
-nmap <silent> <c-l> :wincmd l<CR>
+" nmap <silent> <c-k> :wincmd k<CR>
+" nmap <silent> <c-j> :wincmd j<CR>
+" nmap <silent> <c-h> :wincmd h<CR>
+" nmap <silent> <c-l> :wincmd l<CR>
 
 " Search highlighting disable
-map <Leader>c :noh<CR>
+" map <Leader>c :noh<CR>
 
 " Tagbar mappings
 " map <Leader>b :TagbarToggle<CR>
 
 " Open vs code in curr dir
-map <Leader>n :!code .<CR>
+" map <Leader>n :!code .<CR>
 
 " Toggle term presets
-map <Leader>s :lua _PYTHON_TOGGLE()<CR>
-map <Leader>g :lua _LAZYGIT_TOGGLE()<CR>
-map <Leader>v :ToggleTerm direction=vertical size=60<CR>
+" map <Leader>pi :lua _PYTHON_TOGGLE()<CR>
+" map <Leader>g :lua _LAZYGIT_TOGGLE()<CR>
+" map <Leader>v :ToggleTerm direction=vertical size=60<CR>
 
 " Mason lsp
-map <Leader>sp :Mason<CR>
+" map <Leader>ls :Mason<CR>
 
 " Telescope stuff
-map <Leader>f :Telescope find_files<CR>
-map <Leader>l :Telescope live_grep<CR>
+" map <Leader>ff :Telescope find_files<CR>
+" map <Leader>fg :Telescope live_grep<CR>
 
 " Lua plugin modules with custom configs
 call v:lua.require('plugins')
@@ -90,6 +90,8 @@ call v:lua.require('configs.telescope')
 call v:lua.require('configs.treesitter')
 call v:lua.require('configs.cmp')
 call v:lua.require('configs.lsp')
+call v:lua.require('configs.null-ls')
+call v:lua.require('configs.whichkey')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()
