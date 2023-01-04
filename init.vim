@@ -34,47 +34,16 @@ filetype plugin indent on   " indents based on filetype
 " Unholy
 " set nowrap                  " display lines as one long line
 
-
 let mapleader = ","
-
-" Hacky terminal stuff
-" map <Leader>t :vs \| te<CR>
-" autocmd TermOpen * startinsert
-" autocmd TermClose * execute 'bdelete! ' . expand('<abuf>')
-" tnoremap kj <C-\><C-n>
-
-" NvimTree shortcut toggle
-" map <Leader>m :NvimTreeToggle .<CR>
 
 " Don't touch, nvim-tree is weird
 autocmd bufenter * if (winnr("$") == 1 && &filetype == "nvimtree") | q | endif
 
 " Use ctrl-[hjkl] to select the active split!
-" nmap <silent> <c-k> :wincmd k<CR>
-" nmap <silent> <c-j> :wincmd j<CR>
-" nmap <silent> <c-h> :wincmd h<CR>
-" nmap <silent> <c-l> :wincmd l<CR>
-
-" Search highlighting disable
-" map <Leader>c :noh<CR>
-
-" Tagbar mappings
-" map <Leader>b :TagbarToggle<CR>
-
-" Open vs code in curr dir
-" map <Leader>n :!code .<CR>
-
-" Toggle term presets
-" map <Leader>pi :lua _PYTHON_TOGGLE()<CR>
-" map <Leader>g :lua _LAZYGIT_TOGGLE()<CR>
-" map <Leader>v :ToggleTerm direction=vertical size=60<CR>
-
-" Mason lsp
-" map <Leader>ls :Mason<CR>
-
-" Telescope stuff
-" map <Leader>ff :Telescope find_files<CR>
-" map <Leader>fg :Telescope live_grep<CR>
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
 
 " Lua plugin modules with custom configs
 call v:lua.require('plugins')
