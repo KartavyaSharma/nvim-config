@@ -159,6 +159,9 @@ local mappings = {
 			"<cmd>Telescope lsp_dynamic_workspace_symbols<cr>",
 			"Workspace Symbols",
 		},
+
+		u = { "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<cr>", "Full Line Diagnostic" },
+		m = { "<cmd>Mason<cr>", "Open Mason" },
 	},
 
 	s = {

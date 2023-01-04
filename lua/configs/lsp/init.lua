@@ -76,7 +76,7 @@ local masonlsp_config = {
         'jsonls',
         'jdtls',
         'tsserver',
-        'pyright'
+        'pylsp',
     }
 }
 
@@ -92,3 +92,18 @@ mason_lspconfig.setup_handlers {
         require('lspconfig')[server_name].setup { capabilities = capabilities }
     end
 }
+
+vim.api.nvim_create_autocmd("CursorHold", {
+  buffer = bufnr,
+  callback = function()
+    local opts = {
+      focusable = false,
+      close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+      border = 'rounded',
+      source = 'always',
+      prefix = ' ',
+      scope = 'cursor',
+    }
+    vim.diagnostic.open_float(nil, opts)
+  end
+})
