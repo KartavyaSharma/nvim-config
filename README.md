@@ -2,4 +2,4 @@
 
 Current Neovim configuration.
 
-![./res/doom.png][./res/doom.png]
+![doom](./res/doom.png) 
