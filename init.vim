@@ -33,6 +33,7 @@ filetype plugin indent on   " indents based on filetype
 
 " Unholy
 " set nowrap                  " display lines as one long line
+" set path+=**,.,,
 
 let mapleader = ","
 
