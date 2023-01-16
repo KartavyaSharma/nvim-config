@@ -100,6 +100,9 @@ local function plugins(use)
     -- LINTING
     use { 'jose-elias-alvarez/null-ls.nvim' }                       -- lsp based code diagnostics and formatting
 
+    -- MARKDOWN
+    use { 'iamcco/markdown-preview.nvim' }                          -- browser based markdown preview for nvim
+
     if packer_bootstrap then
         print 'Restart Neovim required after installation!'
         require('packer').sync()

@@ -62,6 +62,7 @@ call v:lua.require('configs.cmp')
 call v:lua.require('configs.lsp')
 call v:lua.require('configs.null-ls')
 call v:lua.require('configs.whichkey')
+call v:lua.require('configs.markdownpreview')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()
