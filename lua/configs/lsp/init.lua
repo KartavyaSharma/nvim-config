@@ -67,16 +67,14 @@ mason.setup(mason_config)
 
 local masonlsp_config = {
     ensure_installed = {
-        -- 'sumneko_lua',
-        -- 'bashls',
-        -- 'clangd',
-        -- 'cssls',
-        -- 'eslint',
-        -- 'grammarly',
-        -- 'jsonls',
-        -- 'jdtls',
-        -- 'tsserver',
-        -- 'pylsp',
+        'sumneko_lua',
+        'bashls',
+        'clangd',
+        'cssls',
+        'grammarly',
+        'jdtls',
+        'tsserver',
+        'pyright',
     }
 }
 
@@ -86,10 +84,27 @@ cmp_lsp.setup({ sources = { name = 'nvim-lsp' } })
 
 local capabilities = cmp_lsp.default_capabilities()
 
+local python_root_files = {
+    'WORKSPACE',
+    'pyproject.toml',
+    'setup.py',
+    'setup.cfg',
+    'requirements.txt',
+    'Pipfile',
+    'pyrightconfig.json',
+    'manage.py',
+}
+
 -- Automatic setup using mason-lspconfig
 mason_lspconfig.setup_handlers {
     function (server_name)
-        require('lspconfig')[server_name].setup { capabilities = capabilities }
+        if server_name == "pyright" then
+            require('lspconfig')[server_name].setup {
+                root_dir = lspconfig.util.root_pattern(python_root_files)
+            }
+        else
+            require('lspconfig')[server_name].setup { capabilities = capabilities }
+        end
     end
 }
 

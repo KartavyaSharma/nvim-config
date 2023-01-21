@@ -95,8 +95,16 @@ local mappings = {
 		"Find files",
 	},
 	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+	-- ["M"] = { "<cmd>call cursor(0, len(getline('.'))/2)<cr>", "Goto Middle"},
 
 	-- LEADER MAPS
+
+	L = {
+		name = "Line Nav",
+		m = { "<cmd>call cursor(0, len(getline('.'))/2)<cr>", "Line middle" },
+		q = { "<cmd>call cursor(0, len(getline('.'))/4)<cr>", "Line quarter" },
+	},
+
 	p = {
 		name = "Packer",
 		c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -187,12 +195,19 @@ local mappings = {
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
 	},
 
-    m = {
-        name = "Markdown Preview",
-        m = { "<cmd>MarkdownPreview<cr>", "Markdown Preview"},
-        s = { "<cmd>MarkdownPreviewStop<cr>", "Markdown Preview Stop"},
-        t = { "<cmd>MarkdownPreviewToggle<cr>", "MarkdownPreviewToggle"},
-    },
+	m = {
+		name = "Markdown Preview",
+		m = { "<cmd>MarkdownPreview<cr>", "Markdown Preview" },
+		s = { "<cmd>MarkdownPreviewStop<cr>", "Markdown Preview Stop" },
+		t = { "<cmd>MarkdownPreviewToggle<cr>", "MarkdownPreviewToggle" },
+	},
+
+	k = {
+		name = "Latex Preview",
+		c = { "<cmd>VimtexCompile<cr>", "Vimtex Compile" },
+		f = { "<cmd>VimtexView<cr>", "Forward Search" },
+		t = { "<cmd>VimtexTocOpen<cr>", "Open ToC" },
+	},
 }
 
 which_key.setup(setup)

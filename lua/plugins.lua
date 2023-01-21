@@ -103,6 +103,9 @@ local function plugins(use)
     -- MARKDOWN
     use { 'iamcco/markdown-preview.nvim' }                          -- browser based markdown preview for nvim
 
+    -- LATEX
+    use { 'lervag/vimtex' }                                         -- for working with latex in nvim
+
     if packer_bootstrap then
         print 'Restart Neovim required after installation!'
         require('packer').sync()

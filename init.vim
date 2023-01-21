@@ -29,6 +29,7 @@ set scrolloff=8             " minimum number of lines above and below cursor
 set sidescrolloff=8         " minimum number of columns either side of cursor
 set guifont=monospace:h17   " fong used in graphical neovim apps
 set whichwrap="bs\<\>\[\]h1"" which horizontal keys are allowed to travel to the prev/next line
+filetype plugin on      " enable filetype detection
 filetype plugin indent on   " indents based on filetype
 
 " Unholy
@@ -36,6 +37,7 @@ filetype plugin indent on   " indents based on filetype
 " set path+=**,.,,
 
 let mapleader = ","
+let maplocalleader = "."
 
 " Don't touch, nvim-tree is weird
 autocmd bufenter * if (winnr("$") == 1 && &filetype == "nvimtree") | q | endif
@@ -45,6 +47,11 @@ nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
+
+" Black hole deletion
+nnoremap <leader>d "_d
+xnoremap <leader>d "_d
+xnoremap <leader>p "_dP
 
 " Lua plugin modules with custom configs
 call v:lua.require('plugins')
@@ -63,6 +70,7 @@ call v:lua.require('configs.lsp')
 call v:lua.require('configs.null-ls')
 call v:lua.require('configs.whichkey')
 call v:lua.require('configs.markdownpreview')
+call v:lua.require('configs.vimtex')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()
