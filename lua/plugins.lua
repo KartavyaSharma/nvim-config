@@ -90,7 +90,7 @@ local function plugins(use)
 
     -- SNIPPETS
     use { "L3MON4D3/LuaSnip", run="make install_jsregexp" }         -- snippet engine with in-place transformations
-    use { "rafamadriz/friendly-snippets" }                          -- bunch of snippets
+    use { "KartavyaSharma/friendly-snippets" }                      -- bunch of snippets
 
     -- LSP
     use { 'williamboman/mason.nvim' }                               -- plugin manager for lsp/daps
