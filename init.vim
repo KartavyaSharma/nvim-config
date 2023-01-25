@@ -29,11 +29,11 @@ set scrolloff=8             " minimum number of lines above and below cursor
 set sidescrolloff=8         " minimum number of columns either side of cursor
 set guifont=monospace:h17   " fong used in graphical neovim apps
 set whichwrap="bs\<\>\[\]h1"" which horizontal keys are allowed to travel to the prev/next line
-filetype plugin on      " enable filetype detection
+filetype plugin on          " enable filetype detection
 filetype plugin indent on   " indents based on filetype
 
 " Unholy
-" set nowrap                  " display lines as one long line
+" set nowrap                " display lines as one long line
 " set path+=**,.,,
 
 let mapleader = ","

@@ -90,14 +90,15 @@ local mappings = {
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-	["f"] = {
-		"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-		"Find files",
-	},
-	["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
-	-- ["M"] = { "<cmd>call cursor(0, len(getline('.'))/2)<cr>", "Goto Middle"},
 
 	-- LEADER MAPS
+	f = {
+		f = {
+			"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+			"Find files",
+		},
+		F = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+	},
 
 	L = {
 		name = "Line Nav",

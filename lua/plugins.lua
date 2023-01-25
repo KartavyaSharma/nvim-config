@@ -96,6 +96,7 @@ local function plugins(use)
     use { 'williamboman/mason.nvim' }                               -- plugin manager for lsp/daps
     use { 'williamboman/mason-lspconfig.nvim' }                     -- lsp config integration with mason
     use { 'neovim/nvim-lspconfig' }                                 -- enables lsp
+    use { 'mfussenegger/nvim-jdtls' }                               -- java language server
 
     -- LINTING
     use { 'jose-elias-alvarez/null-ls.nvim' }                       -- lsp based code diagnostics and formatting
