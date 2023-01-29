@@ -107,6 +107,10 @@ local function plugins(use)
     -- LATEX
     use { 'lervag/vimtex' }                                         -- for working with latex in nvim
 
+    -- NAVIGATION
+    use { 'ggandor/leap.nvim' }                                     -- for moving anywhere
+    use { 'nanozuki/tabby.nvim' }                                   -- tabline plugin
+
     if packer_bootstrap then
         print 'Restart Neovim required after installation!'
         require('packer').sync()

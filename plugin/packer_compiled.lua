@@ -154,6 +154,11 @@ _G.packer_plugins = {
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["leap.nvim"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -235,6 +240,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
+  },
+  ["tabby.nvim"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/tabby.nvim",
+    url = "https://github.com/nanozuki/tabby.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,

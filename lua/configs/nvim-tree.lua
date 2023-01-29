@@ -20,6 +20,10 @@ local config = {
                 {
                     key = '<C-v>',
                     action = 'system_open'
+                },
+                {
+                    key = 't',
+                    action = 'tabnew'
                 }
             }
         }

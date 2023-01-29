@@ -90,6 +90,8 @@ local mappings = {
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+    ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
+    [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
 
 	-- LEADER MAPS
 	f = {
@@ -97,13 +99,14 @@ local mappings = {
 			"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
 			"Find files",
 		},
-		F = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
+		["/"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Grep" },
 	},
 
 	L = {
 		name = "Line Nav",
 		m = { "<cmd>call cursor(0, len(getline('.'))/2)<cr>", "Line middle" },
 		q = { "<cmd>call cursor(0, len(getline('.'))/4)<cr>", "Line quarter" },
+        e = { "<cmd>call cursor(0, len(getline('.'))*0.75)<cr>", "Line 75" }
 	},
 
 	p = {
@@ -194,6 +197,7 @@ local mappings = {
 		f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
 		h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
+        a = { "<cmd>exe v:count1 . \"ToggleTerm\"<cr>", "Split Vertically"},
 	},
 
 	m = {

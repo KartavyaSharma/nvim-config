@@ -71,6 +71,8 @@ call v:lua.require('configs.null-ls')
 call v:lua.require('configs.whichkey')
 call v:lua.require('configs.markdownpreview')
 call v:lua.require('configs.vimtex')
+call v:lua.require('configs.leap')
+call v:lua.require('configs.tabby')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()
