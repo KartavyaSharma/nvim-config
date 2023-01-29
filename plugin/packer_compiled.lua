@@ -179,6 +179,11 @@ _G.packer_plugins = {
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["nightfox.nvim"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
+    url = "https://github.com/EdenEast/nightfox.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/null-ls.nvim",

@@ -52,6 +52,7 @@ local function plugins(use)
     -- COLORSCHEME
     use { 'folke/tokyonight.nvim' }
     use { 'lunarvim/darkplus.nvim' }
+    use { 'EdenEast/nightfox.nvim' }
 
     -- EDITOR
     use { 'numToStr/Comment.nvim' }                                 -- multiline comments

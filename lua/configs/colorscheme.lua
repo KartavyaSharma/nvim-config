@@ -1,5 +1,5 @@
 -- NOOB WAY
-local scheme = 'tokyonight'
+local scheme = 'Carbonfox'
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. scheme)
 if not status_ok then
