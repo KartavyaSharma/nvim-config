@@ -70,7 +70,7 @@ dashboard.section.terminal.opts.redraw = true
 dashboard.config.layout = {
 	{ type = "padding", val = 1 },
 	dashboard.section.terminal,
-	{ type = "padding", val = height + 8 },
+	{ type = "padding", val = height + 3 },
 	dashboard.section.buttons,
 	{ type = "padding", val = 1 },
 	dashboard.section.footer,
