@@ -5,8 +5,6 @@ set termencoding=utf-8      " terminal encoding
 set mouse=a                 " allow mouse usage
 set t_Co=256                " 256-bit terminal color support
 set termguicolors           " set term gui colors
-syntax on                   " syntax highlighting
-syntax enable               " 
 set cursorline              " cursor line indicator
 set cb+=unnamedplus         " shared clipboard
 set tabstop=4               " show existing tab with 4 spaces width
@@ -28,14 +26,18 @@ set linebreak               " companion to wrap, don't split words
 set scrolloff=8             " minimum number of lines above and below cursor
 set sidescrolloff=8         " minimum number of columns either side of cursor
 set guifont=monospace:h17   " fong used in graphical neovim apps
-set whichwrap="bs\<\>\[\]h1"" which horizontal keys are allowed to travel to the prev/next line
 set nobomb                  " disable bomb characters
 set spell                   " enable spellcheck
+
 filetype plugin on          " enable filetype detection
 filetype plugin indent on   " indents based on filetype
+syntax on                   " syntax highlighting
+syntax enable               " syntax highlighting
+
+set whichwrap="bs\<\>\[\]h1 
 
 " Unholy
-" set nowrap                " display lines as one long line
+" set nowrap
 " set path+=**,.,,
 
 let mapleader = ","
@@ -75,7 +77,6 @@ call v:lua.require('configs.markdownpreview')
 call v:lua.require('configs.vimtex')
 call v:lua.require('configs.leap')
 call v:lua.require('configs.tabby')
-" call v:lua.require('configs.feline')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()
