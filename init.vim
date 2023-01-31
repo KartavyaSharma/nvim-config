@@ -77,6 +77,7 @@ call v:lua.require('configs.markdownpreview')
 call v:lua.require('configs.vimtex')
 call v:lua.require('configs.leap')
 call v:lua.require('configs.tabby')
+call v:lua.require('configs.mini_jump')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()
