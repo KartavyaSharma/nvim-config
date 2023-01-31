@@ -46,6 +46,9 @@ let maplocalleader = "."
 " Don't touch, nvim-tree is weird
 autocmd bufenter * if (winnr("$") == 1 && &filetype == "nvimtree") | q | endif
 
+" Printer go brrr
+nnoremap <leader><leader><leader>p :r !echo; lpstat -p \| sed 's/printer //g' \| sed 's/is idle.  enabled since.*//g'; echo<cr>
+
 " Use ctrl-[hjkl] to select the active split!
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
