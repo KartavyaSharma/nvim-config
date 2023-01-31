@@ -48,6 +48,7 @@ local function plugins(use)
     use { 'windwp/nvim-autopairs' }                                 -- auto closing
     use { 'windwp/nvim-ts-autotag', after='nvim-treesitter' }       -- auto tag pairing
     use { 'goolord/alpha-nvim' }                                    -- startup screen
+    use { 'echasnovski/mini.nvim', branch = 'stable' }              -- library of mini plugins
 
     -- COLORSCHEME
     use { 'folke/tokyonight.nvim' }
@@ -69,6 +70,7 @@ local function plugins(use)
     use { 'folke/which-key.nvim' }                                  -- keymap integration
     -- use { 'preservim/tagbar' }                                   -- tag bar with file structure
     -- use { 'karb94/neoscroll.nvim' }                              -- smooth scrolling
+    -- use { 'feline-nvim/feline.nvim' }                            -- another status line
 
     -- GIT
     use { 'lewis6991/gitsigns.nvim' }                               -- git change signs on the left

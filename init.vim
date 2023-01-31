@@ -29,6 +29,8 @@ set scrolloff=8             " minimum number of lines above and below cursor
 set sidescrolloff=8         " minimum number of columns either side of cursor
 set guifont=monospace:h17   " fong used in graphical neovim apps
 set whichwrap="bs\<\>\[\]h1"" which horizontal keys are allowed to travel to the prev/next line
+set nobomb                  " disable bomb characters
+set spell                   " enable spellcheck
 filetype plugin on          " enable filetype detection
 filetype plugin indent on   " indents based on filetype
 
@@ -73,6 +75,7 @@ call v:lua.require('configs.markdownpreview')
 call v:lua.require('configs.vimtex')
 call v:lua.require('configs.leap')
 call v:lua.require('configs.tabby')
+" call v:lua.require('configs.feline')
 
 " Plugin setups with default configs
 call v:lua.require('nvim-autopairs').setup()

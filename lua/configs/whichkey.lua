@@ -90,6 +90,7 @@ local mappings = {
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+    ["j"] = { "<cmd>TSEnable highlight<cr>", "Java Highlight"},
     ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
     [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
 
