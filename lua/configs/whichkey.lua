@@ -59,7 +59,7 @@ local setup = {
 	hidden = { "<silent>", "<cmd>", "<Cmd>", "<CR>", "call", "lua", "^:", "^ " }, -- hide mapping boilerplate
 	show_help = true, -- show help message on the command line when the popup is visible
 	triggers = "auto", -- automatically setup triggers
-	-- triggers = {"<leader>"} -- or specify a list manually
+	-- triggers = {"<leader>"}, -- or specify a list manually
 	triggers_blacklist = {
 		-- list of mode / prefixes that should never be hooked by WhichKey
 		-- this is mostly relevant for key maps that start with a native binding
@@ -91,24 +91,10 @@ local mappings = {
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["`"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
     ["h"] = { "<cmd>TSEnable highlight<cr>", "Treesitter Highlight Enable"},
-    ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
-    [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
+    -- ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
+    -- [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
 
 	-- LEADER MAPS
-	f = {
-		f = {
-			"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-			"Find files",
-		},
-		["/"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Grep" },
-	},
-
-	L = {
-		name = "Line Nav",
-		m = { "<cmd>call cursor(0, len(getline('.'))/2)<cr>", "Line middle" },
-		q = { "<cmd>call cursor(0, len(getline('.'))/4)<cr>", "Line quarter" },
-	},
-
 	p = {
 		name = "Packer",
 		c = { "<cmd>PackerCompile<cr>", "Compile" },
@@ -212,6 +198,21 @@ local mappings = {
 		c = { "<cmd>VimtexCompile<cr>", "Vimtex Compile" },
 		f = { "<cmd>VimtexView<cr>", "Forward Search" },
 		t = { "<cmd>VimtexTocOpen<cr>", "Open ToC" },
+	},
+
+	f = {
+        name = "Find",
+		f = {
+			"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+			"Find files",
+		},
+		["/"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Grep" },
+	},
+
+	L = {
+		name = "Line Nav",
+		m = { "<cmd>call cursor(0, len(getline('.'))/2)<cr>", "Line middle" },
+		q = { "<cmd>call cursor(0, len(getline('.'))/4)<cr>", "Line quarter" },
 	},
 }
 

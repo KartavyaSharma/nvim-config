@@ -48,7 +48,6 @@ autocmd bufenter * if (winnr("$") == 1 && &filetype == "nvimtree") | q | endif
 
 " Printer go brrr
 nnoremap <leader><leader><leader>p :r !echo; lpstat -p \| sed 's/printer //g' \| sed 's/is idle.  enabled since.*//g'; echo<cr>
-
 nnoremap <leader><leader>pl :w<cr>:!lpoptions -d Brother_HL_L2340D_series<cr>:!lp -n 1 -o media=a4 -o sides=two-sided-long-edge %<cr><cr>
 
 " Use ctrl-[hjkl] to select the active split!
