@@ -216,5 +216,8 @@ local mappings = {
 	},
 }
 
+vim.o.timeout = true
+vim.o.timeoutlen = 600
+
 which_key.setup(setup)
 which_key.register(mappings, opts)
