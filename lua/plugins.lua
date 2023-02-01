@@ -68,7 +68,6 @@ local function plugins(use)
     use { 'famiu/bufdelete.nvim' }                                  -- easy buffer deletion
     use { 'akinsho/toggleterm.nvim' }                               -- integrated nvim terminal
     use { 'folke/which-key.nvim' }                                  -- keymap integration
-
     use { 'kylechui/nvim-surround', tag="*"}                        -- auto surround selection
     -- use { 'preservim/tagbar' }                                   -- tag bar with file structure
     -- use { 'karb94/neoscroll.nvim' }                              -- smooth scrolling
