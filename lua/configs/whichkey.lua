@@ -89,8 +89,8 @@ local mappings = {
 	["w"] = { "<cmd>w!<CR>", "Save" },
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
-	["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-    ["j"] = { "<cmd>TSEnable highlight<cr>", "Java Highlight"},
+	["`"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+    ["h"] = { "<cmd>TSEnable highlight<cr>", "Treesitter Highlight Enable"},
     ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
     [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
 
