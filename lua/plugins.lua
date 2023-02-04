@@ -69,6 +69,7 @@ local function plugins(use)
     use { 'akinsho/toggleterm.nvim' }                               -- integrated nvim terminal
     use { 'folke/which-key.nvim' }                                  -- keymap integration
     use { 'kylechui/nvim-surround', tag="*"}                        -- auto surround selection
+    use { 'rcarriga/nvim-notify' }                                  -- fancy notification plugin
     -- use { 'preservim/tagbar' }                                   -- tag bar with file structure
     -- use { 'karb94/neoscroll.nvim' }                              -- smooth scrolling
     -- use { 'feline-nvim/feline.nvim' }                            -- another status line
@@ -113,7 +114,7 @@ local function plugins(use)
 
     -- NAVIGATION
     use { 'ggandor/leap.nvim' }                                     -- for moving anywhere
-    use { 'nanozuki/tabby.nvim' }                                   -- tabline plugin
+    use { 'nanozuki/tabby.nvim' }                                   -- tabline plugin 
 
     if packer_bootstrap then
         print 'Restart Neovim required after installation!'

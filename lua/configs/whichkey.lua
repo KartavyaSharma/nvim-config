@@ -90,7 +90,8 @@ local mappings = {
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["`"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-    ["h"] = { "<cmd>TSEnable highlight<cr>", "Treesitter Highlight Enable"},
+    ["h"] = { "<cmd>TSEnable highlight<CR>", "Treesitter Highlight Enable"},
+    ["n"] = { "<cmd>Telescope notify<CR>", "Telescope Notify"},
     -- ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
     -- [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
 
