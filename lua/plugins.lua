@@ -48,7 +48,7 @@ local function plugins(use)
     use { 'windwp/nvim-autopairs' }                                 -- auto closing
     use { 'windwp/nvim-ts-autotag', after='nvim-treesitter' }       -- auto tag pairing
     use { 'goolord/alpha-nvim' }                                    -- startup screen
-    use { 'echasnovski/mini.nvim', branch = 'stable' }              -- library of mini plugins
+    use { 'echasnovski/mini.animate' }                              -- smooth library 
 
     -- COLORSCHEME
     use { 'folke/tokyonight.nvim' }
@@ -102,7 +102,7 @@ local function plugins(use)
     use { 'williamboman/mason-lspconfig.nvim' }                     -- lsp config integration with mason
     use { 'neovim/nvim-lspconfig' }                                 -- enables lsp
     use { 'mfussenegger/nvim-jdtls' }                               -- java language server
-
+    use { 'folke/trouble.nvim' }                                    -- document diagnostics
     -- LINTING
     use { 'jose-elias-alvarez/null-ls.nvim' }                       -- lsp based code diagnostics and formatting
 

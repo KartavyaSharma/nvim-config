@@ -179,10 +179,10 @@ _G.packer_plugins = {
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  ["mini.nvim"] = {
+  ["mini.animate"] = {
     loaded = true,
-    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/mini.nvim",
-    url = "https://github.com/echasnovski/mini.nvim"
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/mini.animate",
+    url = "https://github.com/echasnovski/mini.animate"
   },
   ["nightfox.nvim"] = {
     loaded = true,
@@ -290,6 +290,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   vimtex = {
     loaded = true,
