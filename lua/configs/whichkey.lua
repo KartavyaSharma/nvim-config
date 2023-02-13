@@ -90,10 +90,10 @@ local mappings = {
 	["q"] = { "<cmd>q!<CR>", "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["`"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
-    ["h"] = { "<cmd>TSEnable highlight<CR>", "Treesitter Highlight Enable"},
-    ["n"] = { "<cmd>Telescope notify<CR>", "Telescope Notify"},
-    -- ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
-    -- [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
+	["h"] = { "<cmd>TSEnable highlight<CR>", "Treesitter Highlight Enable" },
+	["n"] = { "<cmd>Telescope notify<CR>", "Telescope Notify" },
+	-- ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
+	-- [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
 
 	-- LEADER MAPS
 	p = {
@@ -184,7 +184,7 @@ local mappings = {
 		f = { "<cmd>ToggleTerm direction=float<cr>", "Float" },
 		h = { "<cmd>ToggleTerm size=10 direction=horizontal<cr>", "Horizontal" },
 		v = { "<cmd>ToggleTerm size=80 direction=vertical<cr>", "Vertical" },
-        a = { "<cmd>exe v:count1 . \"ToggleTerm\"<cr>", "Split Vertically"},
+		a = { '<cmd>exe v:count1 . "ToggleTerm"<cr>', "Split Vertically" },
 	},
 
 	m = {
@@ -202,9 +202,9 @@ local mappings = {
 	},
 
 	f = {
-        name = "Find",
+		name = "Find",
 		f = {
-			"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+			"<cmd>lua require('telescope.builtin').find_files({hidden=true}, require('telescope.themes').get_dropdown{previewer = false})<cr>",
 			"Find files",
 		},
 		["/"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Grep" },

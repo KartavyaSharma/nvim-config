@@ -116,6 +116,9 @@ local function plugins(use)
     use { 'ggandor/leap.nvim' }                                     -- for moving anywhere
     use { 'nanozuki/tabby.nvim' }                                   -- tabline plugin 
 
+    -- DEBUGGING
+    use { 'mfussenegger/nvim-dap' }                                 -- debug adapter protocol
+
     if packer_bootstrap then
         print 'Restart Neovim required after installation!'
         require('packer').sync()

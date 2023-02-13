@@ -1,4 +1,5 @@
 -- NOOB WAY
+-- local scheme = 'Dawnfox'
 local scheme = 'Carbonfox'
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. scheme)

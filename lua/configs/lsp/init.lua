@@ -67,7 +67,7 @@ mason.setup(mason_config)
 
 local masonlsp_config = {
     ensure_installed = {
-        'sumneko_lua',
+        -- 'sumneko_lua',
         'bashls',
         'clangd',
         'cssls',
