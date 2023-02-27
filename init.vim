@@ -89,4 +89,3 @@ call v:lua.require('nvim-autopairs').setup()
 call v:lua.require('todo-comments').setup()
 call v:lua.require('Comment').setup()
 call v:lua.require('nvim-surround').setup()
-

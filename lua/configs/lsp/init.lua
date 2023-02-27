@@ -69,7 +69,6 @@ local masonlsp_config = {
     ensure_installed = {
         -- 'sumneko_lua',
         'bashls',
-        'clangd',
         'cssls',
         'grammarly',
         'jdtls',
