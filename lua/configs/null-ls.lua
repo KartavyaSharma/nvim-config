@@ -11,9 +11,9 @@ local null_config = {
     sources = {
         formatting.prettier.with({ extra_args = { '--no-semi', '--single-quote', '--jsx-single-quote' } }),
         formatting.stylua,
-        -- formatting.autopep8,
+        formatting.autopep8,
         diagnostics.eslint,
-        -- diagnostics.flake8
+        diagnostics.flake8
     }
 }
 
