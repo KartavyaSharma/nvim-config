@@ -54,6 +54,7 @@ local function plugins(use)
     use { 'folke/tokyonight.nvim' }
     use { 'lunarvim/darkplus.nvim' }
     use { 'EdenEast/nightfox.nvim' }
+    use { 'projekt0n/github-nvim-theme' }
 
     -- EDITOR
     use { 'numToStr/Comment.nvim' }                                 -- multiline comments
