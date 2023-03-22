@@ -6,6 +6,7 @@ end
 local config = {
     sort_by = 'case_sensitive',
     view = {
+        width = 23,
         adaptive_size = false,
         mappings = {
             list = {
