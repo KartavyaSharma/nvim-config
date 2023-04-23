@@ -71,9 +71,6 @@ local function plugins(use)
     use { 'folke/which-key.nvim' }                                  -- keymap integration
     use { 'kylechui/nvim-surround', tag="*"}                        -- auto surround selection
     use { 'rcarriga/nvim-notify' }                                  -- fancy notification plugin
-    -- use { 'preservim/tagbar' }                                   -- tag bar with file structure
-    -- use { 'karb94/neoscroll.nvim' }                              -- smooth scrolling
-    -- use { 'feline-nvim/feline.nvim' }                            -- another status line
 
     -- GIT
     use { 'lewis6991/gitsigns.nvim' }                               -- git change signs on the left
@@ -104,6 +101,7 @@ local function plugins(use)
     use { 'neovim/nvim-lspconfig' }                                 -- enables lsp
     use { 'mfussenegger/nvim-jdtls' }                               -- java language server
     use { 'folke/trouble.nvim' }                                    -- document diagnostics
+
     -- LINTING
     use { 'jose-elias-alvarez/null-ls.nvim' }                       -- lsp based code diagnostics and formatting
 
