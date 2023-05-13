@@ -1,7 +1,7 @@
 -- NOOB WAY
 -- local scheme = 'Dawnfox'
 -- local scheme = 'Carbonfox'
-local scheme = 'github_dimmed'
+local scheme = 'github_dark_dimmed'
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. scheme)
 if not status_ok then

@@ -101,6 +101,7 @@ local function plugins(use)
     use { 'neovim/nvim-lspconfig' }                                 -- enables lsp
     use { 'mfussenegger/nvim-jdtls' }                               -- java language server
     use { 'folke/trouble.nvim' }                                    -- document diagnostics
+    use { 'github/copilot.vim' }                                      -- Copilot
 
     -- LINTING
     use { 'jose-elias-alvarez/null-ls.nvim' }                       -- lsp based code diagnostics and formatting

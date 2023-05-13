@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["darkplus.nvim"] = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/darkplus.nvim",
