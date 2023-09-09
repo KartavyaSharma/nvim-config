@@ -92,6 +92,7 @@ local mappings = {
 	["`"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
 	["h"] = { "<cmd>TSEnable highlight<CR>", "Treesitter Highlight Enable" },
 	["n"] = { "<cmd>Telescope notify<CR>", "Telescope Notify" },
+    ["z"] = { "<cmd>50%<CR>", "Jump to middle"},
 	-- ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
 	-- [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
 

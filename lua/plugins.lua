@@ -55,6 +55,11 @@ local function plugins(use)
     use { 'lunarvim/darkplus.nvim' }
     use { 'EdenEast/nightfox.nvim' }
     use { 'projekt0n/github-nvim-theme' }
+    use { 'rebelot/kanagawa.nvim' }
+    use { 'bluz71/vim-moonfly-colors' }
+
+    -- COLORSCHEME MANAGER
+    use { 'rrethy/nvim-base16' }                                    -- switch color schemes
 
     -- EDITOR
     use { 'numToStr/Comment.nvim' }                                 -- multiline comments
@@ -77,7 +82,7 @@ local function plugins(use)
 
     -- TELESCOPE
     use { 'nvim-telescope/telescope.nvim' }                         -- core
-    use { 'nvim-telescope/telescope-fzf-native.nvim', rum='make' }  -- better fzf perf
+    use { 'nvim-telescope/telescope-fzf-native.nvim', run='make' }  -- better fzf perf
     use { 'junegunn/fzf' }                                          -- fuzzy finding
 
     -- TREESITTER
@@ -101,7 +106,7 @@ local function plugins(use)
     use { 'neovim/nvim-lspconfig' }                                 -- enables lsp
     use { 'mfussenegger/nvim-jdtls' }                               -- java language server
     use { 'folke/trouble.nvim' }                                    -- document diagnostics
-    use { 'github/copilot.vim' }                                      -- Copilot
+    use { 'github/copilot.vim' }                                    -- Copilot
 
     -- LINTING
     use { 'jose-elias-alvarez/null-ls.nvim' }                       -- lsp based code diagnostics and formatting

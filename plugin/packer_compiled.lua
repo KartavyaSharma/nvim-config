@@ -164,6 +164,11 @@ _G.packer_plugins = {
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["kanagawa.nvim"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
+    url = "https://github.com/rebelot/kanagawa.nvim"
+  },
   ["leap.nvim"] = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/leap.nvim",
@@ -208,6 +213,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
     url = "https://github.com/windwp/nvim-autopairs"
+  },
+  ["nvim-base16"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/nvim-base16",
+    url = "https://github.com/rrethy/nvim-base16"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -310,6 +320,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/trouble.nvim",
     url = "https://github.com/folke/trouble.nvim"
+  },
+  ["vim-moonfly-colors"] = {
+    loaded = true,
+    path = "/Users/kartavyasharma/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
   },
   vimtex = {
     loaded = true,
