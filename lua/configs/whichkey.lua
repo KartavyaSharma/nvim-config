@@ -211,12 +211,6 @@ local mappings = {
 		},
 		["/"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Grep" },
 	},
-
-	L = {
-		name = "Line Nav",
-		m = { "<cmd>call cursor(0, len(getline('.'))/2)<cr>", "Line middle" },
-		q = { "<cmd>call cursor(0, len(getline('.'))/4)<cr>", "Line quarter" },
-	},
 }
 
 vim.o.timeout = true
