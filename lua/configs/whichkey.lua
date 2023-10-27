@@ -94,8 +94,8 @@ local mappings = {
 	["n"] = { "<cmd>Telescope notify<CR>", "Telescope Notify" },
     ["z"] = { "<cmd>50%<CR>", "Jump to middle"},
     ["F"] = { "<cmd><c-g>u<Esc>[s1z=`]a<c-g>u", "fix all"},
-	-- ["<"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
-	-- [">"] = { "<cmd>tabnext<CR>", "Next Tab"},
+	["tp"] = { "<cmd>tabprevious<CR>", "Previous Tab"},
+	["tn"] = { "<cmd>tabnext<CR>", "Next Tab"},
 
 	-- LEADER MAPS
 	p = {

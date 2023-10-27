@@ -43,11 +43,6 @@ dashboard.section.buttons.val = {
 }
 
 local function footer()
-	-- NOTE: requires the fortune-mod package to work
-	-- local handle = io.popen("fortune")
-	-- local fortune = handle:read("*a")
-	-- handle:close()
-	-- return fortune
 	return "why did i need this again?"
 end
 
@@ -59,22 +54,6 @@ dashboard.section.header.opts.hl = "Include"
 dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
-
--- local width = 46
--- local height = 15
--- dashboard.section.terminal.command = "cat | " .. os.getenv("HOME") .. "/.config/nvim/doom/render.sh"
--- dashboard.section.terminal.width = width
--- dashboard.section.terminal.height = height
--- dashboard.section.terminal.opts.redraw = true
-
--- dashboard.config.layout = {
--- 	{ type = "padding", val = 1 },
--- 	dashboard.section.terminal,
--- 	{ type = "padding", val = height},
--- 	dashboard.section.buttons,
--- 	{ type = "padding", val = 1 },
--- 	dashboard.section.footer,
--- }
 
 alpha.setup(dashboard.opts)
 
